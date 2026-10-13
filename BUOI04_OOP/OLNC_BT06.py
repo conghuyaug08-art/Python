@@ -57,5 +57,10 @@ def main():
     gb.AddStudent(hs2)
     gb.DisplayReportCard()
 
+    top = gb.FindTopStudent()
+    if top is not None:
+        print("Hoc sinh diem cao nhat:", top.name)
+
+
 if __name__ == "__main__":
     main()
